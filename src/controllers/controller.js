@@ -1,6 +1,6 @@
 
 const getData = (req,res) => {
-    let utcT = new Date().toISOString()
+    let utcT = new Date().toISOString().split('.')[0] + 'Z'
     let date = new Date()
     let day = new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(date)
     res.json(
