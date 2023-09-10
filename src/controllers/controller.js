@@ -1,4 +1,4 @@
-const jsonData = require('../data.json')
+
 const getData = (req,res) => {
     let utcT = new Date().toISOString()
     let date = new Date()
@@ -9,8 +9,8 @@ const getData = (req,res) => {
             "current_day": day,
             "utc_time":utcT,
             "track": req.query.track,
-            "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
-            "github_repo_url": "https://github.com/username/repo",
+            "github_file_url": "https://github.com/ANNMAINAWANGARI/node-backend/blob/main/src/index.js",
+            "github_repo_url": "https://github.com/ANNMAINAWANGARI/node-backend",
             "status_code": 200
           }
     );
